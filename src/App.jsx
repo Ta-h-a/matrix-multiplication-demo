@@ -9,11 +9,11 @@ function App() {
   const [firstMatrix, setFirstMatrix] = React.useState([[0, 0]]);
   const [secondMatrix, setSecondMatrix] = React.useState([[0, 0]]);
 
-  React.useEffect(() => {
-    console.log(firstMatrix);
-    console.log(secondMatrix);
-    console.log({ result: matrixMultiplication(firstMatrix, secondMatrix) });
-  }, [firstMatrix, secondMatrix]);
+  // React.useEffect(() => {
+  //   console.log(firstMatrix);
+  //   console.log(secondMatrix);
+  //   console.log({ result: matrixMultiplication(firstMatrix, secondMatrix) });
+  // }, [firstMatrix, secondMatrix]);
 
   const result = matrixMultiplication(firstMatrix, secondMatrix);
 
